@@ -16,14 +16,17 @@ header{
   width: 100%;
 }
 .inicio{
- 
+ position: relative;
   background: url(./img/pexels-mateusz-dach-450035.jpg);
  
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+padding: auto;
   
+  
+  z-index: -1;
 }
 
 .font-inicio{
