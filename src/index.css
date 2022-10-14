@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+header{
+  background-color: rgb(43, 26, 26);
+  
+}
+.bab{
+  position: fixed;
+  width: 100%;
+}
+.inicio{
+ 
+  background: url(./img/pexels-mateusz-dach-450035.jpg);
+ 
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  
+}
+
+.font-inicio{
+  position: relative;
+  background: rgba(0, 0, 0, .3);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.conteiner{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+.conteiner .btn-menu label{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  cursor: pointer;
+}
+.conteiner .btn-menu, .logo {
+  float: left;
+  line-height: 70px;
+  
+}
+.logo a{
+  color: #fff;
+  font-weight: 400;
+  font-size: 42px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.conteiner .menu{
+float: right;
+line-height: 70px;
+}
+.conteiner .menu a{
+  display: inline-block;
+  padding: 15px 20px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition:  all .3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+}
+.conteiner .menu a:hover{
+  border-bottom:2px solid #c7c7c7 ;
+  padding: 5px 20px;
+  color: aqua;
+}
+#btn-menu{
+  display: none;
+
+}
+.container-menu{
+  position: absolute;
+  background: rgb(0, 0, 0,.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.cont-menu{
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+}
+.cont-menu nav{
+  transform: translateY(15%);
+}
+.cont-menu nav a{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left:5px solid transparent ;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+  border-left:5px solid #c7c7c7 ;
+  background: #1f1f1f;
+
+}
+.cont-menu label{
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 19px;
+}
+@media (min-width:900px){
+  .icon-menu{
+visibility: hidden;
+  }
+  .caja-menu1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .info-yo{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+  }
+}
+  
+  @media (max-width:899px){
+    .menu{
+  visibility: hidden;
+    }
+    
+    .contenedor-inicio{
+      position: relative;
+      top: 80px;
+      
+      
+    }
+  }
+  .caja{
+    width: 100%;
+    height: 8000px;
+    background: rgb(255, 255, 255);
+  }
+.abajo{
+  background: rgb(148, 148, 148);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  transition: .5s;
+}
+.abajo a,.abajo .menu a,.abajo .btn-menu label{
+  color: #000000;
+}
+
+.inf-title{
+  display: flex;
+  width: auto;
+  height: 40px;
+  color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+  overflow: hidden;
+  
+}
+.inf-title ul{
+  list-style: none;
+  padding-left: 10px;
+  animation: cambiar 7s infinite;
+  color: rgb(47, 137, 216);
+}
+.inf-title ul,p{
+  margin: 0;
+
+}
+@keyframes cambiar{
+  0%{
+    margin-top:0 ;
+  }
+  20%{
+    margin-top: 0;
+  }
+  45%{
+    margin-top: -40px;
+  }
+  75%{
+    margin-top: -40px;
+  }
+  
+  100%{
+    margin-top: 0;
+  }
+}
+.info-p{
+  max-width: 300px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+ 
+}
+.info-yo{
+  max-width: 500px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.info-yo h2{
+  margin-bottom: 10px;
+  color: rgb(102, 236, 90);
+}
+
+.info-yo p{
+  margin-bottom: 10px;
+}
+.info-yo b{
+  color: aqua;
+}
