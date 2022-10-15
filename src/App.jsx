@@ -9,6 +9,7 @@ function App() {
 window.addEventListener("scroll",function(){//scroll
     var header=this.document.querySelector("header");
     header.classList.toggle("abajo",window.scrollY>0)
+    
   })
   return (
     <div className="App">
@@ -47,7 +48,7 @@ window.addEventListener("scroll",function(){//scroll
         </div>
       </header>
     <section id='section-inicio' className='inicio'><Inicio/></section>
-    <section id='section-habilidades'className='inicio'><Habilidades/></section>
+    <section id='section-habilidades'className='hh' ><Habilidades/></section>
     <section id='section-proyectos'><Proyectos/></section>
     <section id='section-contacto'><Contacto/></section>
     </div>

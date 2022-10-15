@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Raleway',sans-serif;
 }
-
+body{
+  background:linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(253,96,29,1) 50%, rgba(252,222,69,1) 100%);
+}
 html{
   scroll-behavior: smooth;
 }
@@ -199,6 +201,7 @@ visibility: hidden;
   animation: cambiar 7s infinite;
   color: rgb(47, 137, 216);
 }
+
 .inf-title ul,p{
   margin: 0;
 
@@ -245,12 +248,7 @@ visibility: hidden;
 .info-yo b{
   color: aqua;
 }
-.havilidades{
-  
-  min-height: 60vh;
-  background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(253,96,29,1) 50%, rgba(252,222,69,1) 100%);
-  z-index: -1;
-}
+
 .carrusel-item{
   display: inline-block;
  width: 250px;
@@ -258,7 +256,7 @@ visibility: hidden;
   background: rgb(0, 0, 0);
   margin: 10px;
   border-radius: 20px;
-  
+  z-index: 10;
 }
 img{
   height: 180px;
@@ -266,6 +264,10 @@ img{
   margin-left: 40px;
   
   
+}
+.hh{
+  z-index: -1;
+  position: relative;
 }
 .carrusel-item:hover{
   background: rgb(255, 255, 255);
@@ -280,15 +282,14 @@ img{
   margin-left: 10px;
   padding-top: 27px;
   border-radius: 20px;
+  
 }
 
-.cajah1{
- position: relative;
- left: 42%;
- top: 40px;
-}
+
 .havilidades h1{
+  margin: auto;
   text-align: center;
+  padding:40px;
   width: 240px;
   height: 55px;
   line-height: 55px;
@@ -300,11 +301,12 @@ img{
 }
 
 .carrusel{
+  float: right;
  padding-top: 80px;
   width: 90%;
   height: 70%;
  margin-left: 5%;
- 
+ z-index: -1;
   
 }
 .img-redux:hover{
@@ -313,7 +315,7 @@ img{
 }
 
 .fa-brands{
-  
+  z-index: -1;
   font-size: 180px;
   margin: auto;
   margin-left: 40px;
