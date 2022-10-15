@@ -47,7 +47,7 @@ window.addEventListener("scroll",function(){//scroll
         </div>
       </header>
     <section id='section-inicio' className='inicio'><Inicio/></section>
-    <section id='section-habilidades'><Habilidades/></section>
+    <section id='section-habilidades'className='inicio'><Habilidades/></section>
     <section id='section-proyectos'><Proyectos/></section>
     <section id='section-contacto'><Contacto/></section>
     </div>
